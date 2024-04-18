@@ -1,19 +1,20 @@
 terraform {
-
+/*
   cloud {
-    organization = "organization-name"
+   organization = "organization-name"
 
-    workspaces {
-      name = "learn-terraform-cloud"
-    }
+   workspaces {
+     name = "learn-terraform-cloud"
+   }
   }
+*/
 
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.31.0"
+      version = "~> 3.28.0"
     }
   }
 
-  required_version = "~> 1.2"
+  required_version = ">= 0.14.0"
 }
